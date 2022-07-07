@@ -4,30 +4,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oxygen&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Document</title>
   </head>
   <body>
-    <div id="container">
-      <div id="calculadora">
-        <input type="text" name="pantalla" id="" />
-        <div class="botones">
-          <input type="button" value="1" onclick="" />
-          <input type="button" value="2" onclick="" />
-          <input type="button" value="3" onclick="" />
-          <input type="button" value="4" onclick="" />
-          <input type="button" value="5" onclick="" />
-          <input type="button" value="6" onclick="" />
-          <input type="button" value="7" onclick="" />
-          <input type="button" value="8" onclick="" />
-          <input type="button" value="9" onclick="" />
-          <input type="button" value="c" onclick="" />
-          <input type="button" value="/" onclick="" />
-          <input type="button" value="+" onclick="" />
-          <input type="button" value="-" onclick="" />
-          <input type="button" value="*" onclick="" />
+    <div class="container">
+      <div class="calculator">
+        <div class="display">
+          <div id="value-After">23423</div>
+          <div id="value-Before">32323</div>
         </div>
+        <button class="col-2">C</button>
+        <button class="operator">←</button>
+        <button class="operator">%</button>
+        <button class="number">7</button>
+        <button class="number">8</button>
+        <button class="number">9</button>
+        <button class="operator">*</button>
+        <button class="number">4</button>
+        <button class="number">5</button>
+        <button class="number">6</button>
+        <button class="operator">-</button>
+        <button class="number">1</button>
+        <button class="number">2</button>
+        <button class="number">3</button>
+        <button class="number">+</button>
+        <button class="col-2 number">0</button>
+        <button class="number">.</button>
+        <button class="number">=</button>
       </div>
     </div>
+    <script src="js/calculadora.js"></script>
   </body>
 </html>
