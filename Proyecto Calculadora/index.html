@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oxygen&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="css/styles.css" />
     <title>Document</title>
   </head>
@@ -19,24 +20,24 @@
           <div id="value-Before"></div>
           <div id="value-Actualy"></div>
         </div>
-        <button class="col-2">C</button>
-        <button class="operator">←</button>
-        <button class="operator">%</button>
+        <button onclick="display.deleteDisplay()" class="col-2">C</button>
+        <button onclick="display.delete()" class="operator">←</button>
+        <button class="operator" value="split">%</button>
         <button class="number">7</button>
         <button class="number">8</button>
         <button class="number">9</button>
-        <button class="operator">*</button>
+        <button class="operator" value="multiplicate">*</button>
         <button class="number">4</button>
         <button class="number">5</button>
         <button class="number">6</button>
-        <button class="operator">-</button>
+        <button class="operator" value="subtract">-</button>
         <button class="number">1</button>
         <button class="number">2</button>
         <button class="number">3</button>
-        <button class="number">+</button>
+        <button class="operator" value="add">+</button>
         <button class="col-2 number">0</button>
         <button class="number">.</button>
-        <button class="number">=</button>
+        <button class="operator" value="same">=</button>
       </div>
     </div>
     <script src="js/calculator.js"></script>
