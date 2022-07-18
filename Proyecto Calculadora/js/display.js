@@ -14,6 +14,6 @@ class Display{
     printValue(){
         this.displayValueActualy.textContent = this.valueActualy;
         this.displayValueBefore.textContent = this.valueBefore;
-        /*Hola que tal estas  */
+        /*Hola que tal sirilo*/
     }
 }
