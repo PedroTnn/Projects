@@ -13,7 +13,7 @@ class Display{
 
     printValue(){
         this.displayValueActualy.textContent = this.valueActualy;
-        this.displayValueBefore.textContent = this.valueBefor;
+        this.displayValueBefore.textContent = this.valueBefore;
         /*Hola que tal estas  */
     }
 }
