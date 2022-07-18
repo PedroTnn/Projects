@@ -1,4 +1,4 @@
-const displayValueBefore = document.getElementById("value-before");
+const displayValueBefore = document.getElementById("value-Before");
 const displayValueActualy = document.getElementById("value-Actualy");
 const buttonNumb = document.querySelectorAll('.number');
 const buttonOperator = document.querySelectorAll('.operator');
