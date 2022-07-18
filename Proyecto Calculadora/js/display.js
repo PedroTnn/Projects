@@ -14,6 +14,10 @@ class Display{
     printValue(){
         this.displayValueActualy.textContent = this.valueActualy;
         this.displayValueBefore.textContent = this.valueBefore;
+<<<<<<< HEAD
         /*Ando triste vamos a chupar */
+=======
+
+>>>>>>> js-display
     }
 }
