@@ -2,11 +2,16 @@ class Display{
     constructor(displayValueBefore,displayValueActualy){
         this.displayValueActualy = displayValueActualy;
         this.displayValueBefore = displayValueBefore;
-        this.calculator = new Calculator();
+        this.calculator= new Calculator();
         this.typeOperation = undefined;
         this.valueActualy='';
         this.valueBefore = '';
-
+        this.sings = {
+            add: '+',
+            split: '/',
+            multiplicate:'x',
+            subtract: '-'
+        }
     }
 
    
@@ -17,6 +22,7 @@ class Display{
         this.valueActualy = this.valueActualy.toString().slice(0,-1);
         this.printValue();
     }
+
     deleteDisplay(){
         this.valueActualy = '';
         this.valueBefore = '';
@@ -32,15 +38,15 @@ class Display{
         this.printValue();
     }
 
-    addNumber(numero){
-        if(numero === '.' && this.valueActualy.includes ('.'))  return
-        this.valueActualy = this.valueActualy.toString() + numero.toString();
+    addNumber(number){
+        if(number === '.' && this.valueActualy.includes('.'))  return
+        this.valueActualy = this.valueActualy.toString() + number.toString();
         this.printValue();
     }
 
     printValue(){
         this.displayValueActualy.textContent = this.valueActualy;
-        this.displayValueBefore.textContent = this.valueBefore;
+        this.displayValueBefore.textContent = `${this.valueBefore} ${this.sings[this.typeOperation]|| ''} `;
     }
 
     calculate(){
@@ -51,4 +57,4 @@ class Display{
         this.valueActualy = this.calculator[this.typeOperation](valueBefore, valueActualy);
     }
   
-}
+} 

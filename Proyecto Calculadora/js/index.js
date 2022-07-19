@@ -6,9 +6,9 @@ const buttonOperator = document.querySelectorAll('.operator');
 const display = new Display(displayValueBefore, displayValueActualy);
 
 buttonNumb.forEach(button =>{
-    button.addEventListener('click',() => display.addNumber(button.innerHTML))
+    button.addEventListener('click',() => display.addNumber(button.innerHTML));
     });
 
    buttonOperator.forEach(button =>{
-   button.addEventListener('click',()=>display.compute(button.value))
-   })
+   button.addEventListener('click',() => display.compute(button.value))
+   });
