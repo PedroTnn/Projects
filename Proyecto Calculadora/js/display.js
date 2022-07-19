@@ -50,10 +50,10 @@ class Display{
     }
 
     calculate(){
-        const valueBefore = parseFloat(this.valueBefore);
-        const valueActualy = parseFloat(this.valueActualy);
-        
-        if(isNaN(valueActualy) || isNaN(this.valueBefore)) return 
+        const valueActualy = parseFloat(this.valueBefore);
+        const valueBefore = parseFloat(this.valueActualy);
+
+        if( isNaN(valueActualy)  || isNaN(valueBefore) ) return
         this.valueActualy = this.calculator[this.typeOperation](valueBefore, valueActualy);
     }
   
