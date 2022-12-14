@@ -1,0 +1,25 @@
+.titlePage{
+   margin-left: 50%;
+    text-shadow: 2px 2px 5px gray;
+}
+
+html{
+    background-color: #d7d7d7;
+  
+}
+
+.navegation{
+    display: flex;
+    justify-content: center;
+  
+}
+
+.navegation a{
+margin-left: 50px;
+color: black;
+font-size: 30px;
+}
+.navegation a:hover{
+    outline: 0.3px solid gray;
+    opacity: 0.6;
+    }
